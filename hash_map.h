@@ -709,7 +709,6 @@ class HashMap {
       k.first = key;
       insert(k.first, k.second);
     }
-
     auto it = find(key);
     return std::ref((*maps_[it.get_pointer()])[key]);
   }
